@@ -129,7 +129,11 @@ if __name__ == "__main__":
             response=takeCommand().lower()
             speak(f"According to the AI, {to_markdown(response.text)}")
    
-            
+# if that doesn't work, use this:
+
+else:
+    speak(f"According to the AI, {to_markdown(query)}")
+
                       
 
         
