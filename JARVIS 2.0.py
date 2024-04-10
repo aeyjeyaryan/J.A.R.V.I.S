@@ -16,11 +16,11 @@ def to_markdown(text):
   text = text.replace('•', '  *')
   return Markdown(textwrap.indent(text,">",predicate = lambda _:True))
 
-google_api_key = 'AIzaSyDdAE064Jj6PpOu07hKhs1Z7he7w21bNdo'
+google_api_key = 'YOUR-API-KEY-HERE'
 
 genai.configure(api_key=google_api_key)
 import os
-os.environ[google_api_key]='AIzaSyA_2h6zL36FsZ49oqj_6VB7PoFo8xYbFl0'
+os.environ[google_api_key]='YOUR-API-KEY-HERE'
 model = genai.GenerativeModel('models/gemini-1.0-pro-latest')
 
 # initialisation
